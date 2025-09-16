@@ -26,9 +26,9 @@ The frontend should be able to:
 - Display tasks in a user-friendly interface
 
 ## Technical Requirements
-Here are a few starter repositories if you would like to use our tech stack:
-- [Backend Starter Repo](https://github.com/hmcts/hmcts-dev-test-backend)
-- [Frontend Starter Repo](https://github.com/hmcts/hmcts-dev-test-frontend)
+Here are links to my updated repositories using the hmcts tech stack:
+- [Backend Repo](https://github.com/hmcts-lrm-anon/hmcts-dev-test-backend)
+- [Frontend Starter Repo](https://github.com/hmcts-lrm-anon/hmcts-dev-test-frontend)
 
 You can use any language you are comfortable with or our own stack:
 - **Backend**: Any language or framework of your choice
