@@ -1,45 +1,76 @@
-# DTS Developer Technical Test
+# HMCTS DTS Developer Challenge
 
-## Objective
-To assess your ability to build a simple API and frontend using best coding practices.
+I have developed a basic system for managing tasks that allows caseworkers to track and manage their work.
 
-## Scenario
-HMCTS requires a new system to be developed so caseworkers can keep track of their tasks. Your technical test is to develop that new system so caseworkers can efficiently manage their tasks.
+## Backend API
 
-## Task Requirements
+The backend API:
 
-### Backend API
-The backend should be able to:
-- Create a task with the following properties:
-  - Title
-  - Description (optional field)
-  - Status
-  - Due date/time
-- Retrieve a task by ID
-- Retrieve all tasks
-- Update the status of a task
-- Delete a task
+- Creates tasks with title, description (optional), status, and due date/time
+- Retrieves a task by ID
+- Retrieves all tasks
+- Updates task status and details
+- Deletes tasks
+- Includes validation and error handling
+- Stores data in a database
 
-### Frontend Application
-The frontend should be able to:
-- Create, view, update, and delete tasks
-- Display tasks in a user-friendly interface
+## Frontend Application
 
-## Technical Requirements
-Here are links to my updated repositories using the hmcts tech stack:
-- [Backend Repo](https://github.com/hmcts-lrm-anon/hmcts-dev-test-backend)
-- [Frontend Starter Repo](https://github.com/hmcts-lrm-anon/hmcts-dev-test-frontend)
+The frontend application:
 
-You can use any language you are comfortable with or our own stack:
-- **Backend**: Any language or framework of your choice
-- **Frontend**: Any language or framework of your choice
-- Implement **unit tests**
-- Store data in a **database**
-- Include **validation and error handling**
-- **Document API endpoints**
+- Creates, views, updates, and deletes tasks
+- Displays tasks in a user-friendly interface
+- Provides form validation and error feedback
+- Uses GOV.UK Design System components
 
-## Submission Guidelines
-- Create repositories on GitHub and add add the links to your application
-- Include a helpful `README.md`!
+## How to Use
 
-Happy coding!
+### Prerequisites
+
+- Java 21+ (for backend)
+- Node.js 18+ with yarn (for frontend)
+- Docker (for PostgreSQL database)
+
+### Running the System
+
+1. Start the PostgreSQL database:
+
+   ```
+   cd hmcts-dev-test-backend/docker
+   docker-compose up -d
+   ```
+
+2. Start the backend (runs on port 4000):
+
+   ```
+   cd hmcts-dev-test-backend
+   ./gradlew bootRun
+   ```
+
+3. Start the frontend (runs on port 3100):
+
+   ```
+   cd hmcts-dev-test-frontend
+   yarn install
+   yarn start:dev
+   ```
+
+4. Access the application at http://localhost:3100
+
+## Repositories
+
+- [Backend Repository](https://github.com/hmcts-lrm-anon/hmcts-dev-test-backend) - Spring Boot REST API
+- [Frontend Repository](https://github.com/hmcts-lrm-anon/hmcts-dev-test-frontend) - Express.js web application
+
+## Security & Quality Improvements
+
+- Comprehensive testing
+- Comprehensive documentation
+- Security enhancements
+- Accessibility compliance
+
+## Example Future features
+
+- Search and filtering
+- User authentication
+- Role-based access
